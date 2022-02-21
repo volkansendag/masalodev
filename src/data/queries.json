@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Bilgiye ulaşılmasını ve bilginin oluşturulmasını sağlayan her türlü görsel,işitsel,basılı ve yazılı araçlara ne ad verilir?",
+        "class": 6,
+        "point": 1,
+        "options": [
+            {
+                "text": "Bilgi"
+            },
+            {
+                "text": "Teknoloji"
+            },
+            {
+                "text": "Bilişim teknolojileri",
+                "value": "true"
+            },
+            {
+                "text": "Bilgi toplumu"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Bilgisayarın çalışması için gerekli olan elle tutulup gözle görülen bilgisayar parçalarına ne ad verilir",
+        "class": 6,
+        "point": 1,
+        "options": [
+            {
+                "text": "işletim sistemi"
+            },
+            {
+                "text": "Donanım",
+                "value": "true"
+            },
+            {
+                "text": "Yazılım"
+            },
+            {
+                "text": "İşlemci"
+            }
+        ]
+    }
+]
