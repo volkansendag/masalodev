@@ -37,7 +37,7 @@ class Soru extends React.Component {
         var message = this.state.message;
         var point = this.state.point;
 
-        if (evt.target.value === "true") {
+        if (evt.target.value == data.answer) {
             if (data.query?.point > 0)
                 point += data.query.point;
 
@@ -68,7 +68,7 @@ class Soru extends React.Component {
                 <p className='query-options'>
                     {this.state.data.query?.options.map(option => {
                         return <label className='query-option' key={v4()}>
-                            <input onChange={this.change} value={option.value} type="radio" name="soru" /> {option.text}
+                            <input onChange={this.change} value={option} type="radio" name="soru" /> {option}
                         </label>
                     })}
                 </p>
