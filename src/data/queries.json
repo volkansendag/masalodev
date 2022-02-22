@@ -4,15 +4,38 @@
         "title": "Bilgiye ulaşılmasını ve bilginin oluşturulmasını sağlayan her türlü görsel,işitsel,basılı ve yazılı araçlara ne ad verilir?",
         "class": 6,
         "point": 1,
-        "answer":"Bilişim teknolojileri",
-        "options": ["Bilgi","Teknoloji","Bilişim teknolojileri","Bilgi toplumu"]
+        "answer": "Bilişim teknolojileri",
+        "options": [
+            "Bilgi",
+            "Teknoloji",
+            "Bilişim teknolojileri",
+            "Bilgi toplumu"
+        ]
     },
     {
         "id": 2,
         "title": "Bilgisayarın çalışması için gerekli olan elle tutulup gözle görülen bilgisayar parçalarına ne ad verilir",
         "class": 6,
         "point": 1,
-        "answer":"Donanım",
-        "options": ["işletim sistemi","Donanım","Yazılım","İşlemci"]
+        "answer": "Donanım",
+        "options": [
+            "işletim sistemi",
+            "Donanım",
+            "Yazılım",
+            "İşlemci"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Hangisi teknolojinin zararlarından biri değildir?",
+        "class": 6,
+        "point": 2,
+        "answer": "İşlemimizi kolaylaştırması",
+        "options": [
+            "Teknoloji bağamlılığı",
+            "zaman kaybı",
+            "İşlemimizi kolaylaştırması",
+            "boyun ve bel fıtığı"
+        ]
     }
 ]
