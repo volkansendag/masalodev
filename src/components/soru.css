@@ -3,7 +3,7 @@
   }
 
   .query{
-      padding: 5% 10%;
+      padding:0% 10%;
   }
 
   .query-options {
@@ -15,7 +15,7 @@
     border: solid;
     width: 35%;
     float: left;
-    margin: 3%;
-    padding: 3%;
-    height: 5rem;
+    margin: 1% 3%;
+    padding: 1% 3%;
+    height: 4rem;
   }

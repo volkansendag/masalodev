@@ -63,7 +63,6 @@ class Soru extends React.Component {
     render() {
         return <div className="Soru">
             <header className="Soru-Header">
-                {this.state.point >= 0 ? <p className='error'>Toplam Puan: {this.state.point}</p> : <></>}
                 <p>{this.state.message}</p>
                 {this.state.data.query ? <p className='query'>{this.state.data.query.title}</p> : <></>}
                 <p className='query-options'>
@@ -73,6 +72,7 @@ class Soru extends React.Component {
                         </label>
                     })}
                 </p>
+                {this.state.point >= 0 ? <p className='error'>Toplam Puan: {this.state.point}</p> : <></>}
             </header>
         </div>
     }
