@@ -1,5 +1,6 @@
 import React from 'react';
 import { v4 } from 'uuid';
+import './soru.css';
 
 
 class Soru extends React.Component {
