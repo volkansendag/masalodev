@@ -21,3 +21,9 @@ bilişim teknolojileri hakkında bir oyun hazırlamak ve bu oyunun her çeşit �
 Oyunu oynamak için tıklayınız; 
 
 [https://masal-eylem.netlify.app/](https://masal-eylem.netlify.app/)
+
+
+Kaynak kodu düzenlemek için;
+
+[https://codesandbox.io/s/github/volkansendag/masalodev](https://codesandbox.io/s/github/volkansendag/masalodev)
+
