@@ -1,6 +1,5 @@
 import React from 'react';
 import { v4 } from 'uuid';
-import styles from './soru.css';
 
 
 class Soru extends React.Component {
@@ -37,7 +36,7 @@ class Soru extends React.Component {
         var message = this.state.message;
         var point = this.state.point;
 
-        if (evt.target.value == data.query?.answer) {
+        if (evt.target.value === data.query?.answer) {
             if (data.query?.point > 0)
                 point += data.query.point;
 

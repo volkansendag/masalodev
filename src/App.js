@@ -1,11 +1,7 @@
 import React from 'react';
-
-import logo from "./logo.svg";
 import "./App.css";
 import Soru from "./components/soru";
 import data from "./data/queries.json"
-import { v4 } from 'uuid';
-
 
 
 class App extends React.Component {
