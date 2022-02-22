@@ -37,5 +37,18 @@
             "İşlemimizi kolaylaştırması",
             "boyun ve bel fıtığı"
         ]
+    },
+    {
+        "id": 4,
+        "title": "OSİ Modeli ağ katmanında taşınan bilgi hangi isimle ifade edilir?",
+        "class": 6,
+        "point": 2,
+        "answer": "veri",
+        "options": [
+            "bit",
+            "çerçeve",
+            "paket",
+            "veri"
+        ]
     }
 ]
