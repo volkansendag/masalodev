@@ -37,7 +37,7 @@ class Soru extends React.Component {
         var message = this.state.message;
         var point = this.state.point;
 
-        if (evt.target.value == data.answer) {
+        if (evt.target.value == data.query?.answer) {
             if (data.query?.point > 0)
                 point += data.query.point;
 
