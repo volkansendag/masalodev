@@ -1,0 +1,21 @@
+.error {
+    color: red;
+  }
+
+  .query{
+      padding: 5% 10%;
+  }
+
+  .query-options {
+      width: 100%;
+  }
+
+
+  .query-option{
+    border: solid;
+    width: 35%;
+    float: left;
+    margin: 3%;
+    padding: 3%;
+    height: 5rem;
+  }

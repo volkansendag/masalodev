@@ -1,5 +1,6 @@
 import React from 'react';
 import { v4 } from 'uuid';
+import styles from './soru.css';
 
 
 class Soru extends React.Component {
@@ -15,46 +16,63 @@ class Soru extends React.Component {
         }
     }
 
-    change = (evt) => {
-        var query = this.state.data.query;
-        this.state.data.query = null;
+    nextQuery = () => {
+        var data = this.state.data;
 
-        if (evt.target.value == "true") {
-            if (query?.point > 0)
-                this.state.point += query.point;
-
-            if (this.state.data.queries.length > this.state.data.index + 1) {
-                this.state.data.index++;
-                query = this.state.data.queries[this.state.data.index];
-                this.state.message = "Tebrikler soruyu bildiniz."
-            } else {
-                query = null;
-                this.state.message = "Tebrikler testi tamamladınız."
-            }
-        } else {
-            this.state.message = "Sanırım dersi dinlememişsin.";
+        if (data.queries.length > data.index + 1) {
+            data.index++;
+            data.query = data.queries[data.index];
+        }
+        else {
+            data.query = null;
         }
 
-        this.setState(this.state);
+        this.setState({ ...this.state, data });
+
+        return data.query;
+    }
+
+    change = (evt) => {
+        var data = this.state.data;
+        var message = this.state.message;
+        var point = this.state.point;
+
+        if (evt.target.value === "true") {
+            if (data.query?.point > 0)
+                point += data.query.point;
+
+            message = "Tebrikler soruyu bildiniz."
+        } else {
+            message = "Sanırım dersi dinlememişsin.";
+        }
+
+        this.setState({
+            ...this.state,
+            message, point, data: { ...data, query: null }
+        });
 
         setTimeout(() => {
-            this.state.message = "";
-            this.state.data.query = query;
-            this.setState(this.state);
+            this.nextQuery();
+            this.setState(() => ({
+                ...this.state,
+                message: ""
+            }))
         }, 2000);
     }
 
     render() {
         return <div className="Soru">
             <header className="Soru-Header">
-                {this.state.point > 0 ? <p>Toplam Puan: {this.state.point}</p> : <></>}
+                {this.state.point >= 0 ? <p className='error'>Toplam Puan: {this.state.point}</p> : <></>}
                 <p>{this.state.message}</p>
-                {this.state.data.query ? <p>{this.state.data.query.title}</p> : <></>}
-                {this.state.data.query?.options.map(option => {
-                    return <label key={v4()}>
-                        <input onChange={this.change} value={option.value} type="radio" name="soru" /> {option.text}
-                    </label>
-                })}
+                {this.state.data.query ? <p className='query'>{this.state.data.query.title}</p> : <></>}
+                <p className='query-options'>
+                    {this.state.data.query?.options.map(option => {
+                        return <label className='query-option' key={v4()}>
+                            <input onChange={this.change} value={option.value} type="radio" name="soru" /> {option.text}
+                        </label>
+                    })}
+                </p>
             </header>
         </div>
     }
