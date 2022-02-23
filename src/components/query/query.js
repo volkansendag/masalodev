@@ -1,9 +1,9 @@
 import React from 'react';
 import { v4 } from 'uuid';
-import './soru.css';
+import './query.css';
 
 
-class Soru extends React.Component {
+class Query extends React.Component {
 
     constructor(props) {
         super(props);
@@ -65,7 +65,7 @@ class Soru extends React.Component {
             <p>{this.state.message}</p>
             {this.state.data.query ? <p className='query'>{this.state.data.query.title}</p> : <></>}
             <p className='query-options'>
-                {this.state.data.query?.options.map(option => {
+                {this.state.data.query?.options?.suffle().map(option => {
                     return <label className='query-option' key={v4()}>
                         <input onChange={this.change} value={option} type="radio" name="soru" /> {option}
                     </label>
@@ -76,4 +76,4 @@ class Soru extends React.Component {
     }
 }
 
-export default Soru;
+export default Query;
