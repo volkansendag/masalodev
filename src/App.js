@@ -2,7 +2,7 @@ import React from 'react';
 import "./App.css";
 import './_utils/prototypes'
 import data from "./data/queries.json"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Query from './components/query/query';
 
 class App extends React.Component {
@@ -39,11 +39,6 @@ class App extends React.Component {
         </Routes>
       </div>
     </Router>
-
-    // return <div className="App">
-    //   <Soru data={this.state}></Soru>
-    // </div>
-
   }
 }
 
