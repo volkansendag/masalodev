@@ -61,19 +61,17 @@ class Soru extends React.Component {
     }
 
     render() {
-        return <div className="Soru">
-            <header className="Soru-Header">
-                <p>{this.state.message}</p>
-                {this.state.data.query ? <p className='query'>{this.state.data.query.title}</p> : <></>}
-                <p className='query-options'>
-                    {this.state.data.query?.options.map(option => {
-                        return <label className='query-option' key={v4()}>
-                            <input onChange={this.change} value={option} type="radio" name="soru" /> {option}
-                        </label>
-                    })}
-                </p>
-                {this.state.point >= 0 ? <p className='error'>Toplam Puan: {this.state.point}</p> : <></>}
-            </header>
+        return <div className='query-wrapper'>
+            <p>{this.state.message}</p>
+            {this.state.data.query ? <p className='query'>{this.state.data.query.title}</p> : <></>}
+            <p className='query-options'>
+                {this.state.data.query?.options.map(option => {
+                    return <label className='query-option' key={v4()}>
+                        <input onChange={this.change} value={option} type="radio" name="soru" /> {option}
+                    </label>
+                })}
+            </p>
+            {this.state.point >= 0 ? <p className='error'>Toplam Puan: {this.state.point}</p> : <></>}
         </div>
     }
 }
