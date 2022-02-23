@@ -1,3 +1,4 @@
+/*jshint freeze: true */
 Object.defineProperty(Array.prototype, "suffle", {
     value: function () {
         "use strict";
