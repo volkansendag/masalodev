@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Bilgiye ulaşılmasını ve bilginin oluşturulmasını sağlayan her türlü görsel,işitsel,basılı ve yazılı araçlara ne ad verilir?",
         "class": 6,
-        "point": 1,
+        "point": 2,
         "answer": "Bilişim teknolojileri",
         "options": [
             "Bilgi",
@@ -16,7 +16,7 @@
         "id": 2,
         "title": "Bilgisayarın çalışması için gerekli olan elle tutulup gözle görülen bilgisayar parçalarına ne ad verilir",
         "class": 6,
-        "point": 1,
+        "point": 2,
         "answer": "Donanım",
         "options": [
             "işletim sistemi",
@@ -36,6 +36,58 @@
             "zaman kaybı",
             "İşlemimizi kolaylaştırması",
             "boyun ve bel fıtığı"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "OSİ Modeli ağ katmanında taşınan bilgi hangi isimle ifade edilir?",
+        "class": 6,
+        "point": 2,
+        "answer": "veri",
+        "options": [
+            "bit",
+            "çerçeve",
+            "paket",
+            "veri"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Kendi kendine düşünebilen ve kendini geliştirebilen sistemlere ne denir?",
+        "class": 6,
+        "point": 2,
+        "answer": "yapay zeka",
+        "options": [
+            "bilişim teknolojileri",
+            "uygulama yazılımı",
+            "yapay zeka",
+            "teknoloji"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Hangisi bir akıllı ev, ofis ve araba teknolojileri değildir?",
+        "class": 6,
+        "point": 2,
+        "answer": "radyo",
+        "options": [
+            "akıllı güvenlik sistemi",
+            "radyo",
+            "iklimlendirme otomasyonu",
+            "araba konumu"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Hangisi bir işletim sistemi değildir?",
+        "class": 6,
+        "point": 2,
+        "answer": "Samsung IOS",
+        "options": [
+            "pardus",
+            "linux",
+            "android",
+            "Samsung IOS"
         ]
     }
 ]
