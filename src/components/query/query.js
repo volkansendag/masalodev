@@ -23,18 +23,17 @@ class Query extends React.Component {
     }
 
     nextQuery = () => {
+        var state = this.state;
 
         if (this.props.queries?.length > this.state.index + 1) {
-            this.state.index++;
-            this.state.query = this.props.queries[this.state.index];
+            state++;
+            state.query = this.props.queries[this.state.index];
         }
         else {
-            this.state.query = null;
+            state.query = null;
         }
 
-        this.setState({ ...this.state });
-
-        return this.state.query;
+        this.setState({ ...state });
     }
 
     change = (evt) => {
