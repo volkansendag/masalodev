@@ -1,5 +1,6 @@
 import React from 'react';
 import { v4 } from 'uuid';
+import suffle from '../../_utils/functions';
 import './query.css';
 
 
@@ -65,7 +66,7 @@ class Query extends React.Component {
             <p>{this.state.message}</p>
             {this.state.data.query ? <p className='query'>{this.state.data.query.title}</p> : <></>}
             <p className='query-options'>
-                {this.state.data.query?.options?.suffle().map(option => {
+                {suffle(this.state.data.query?.options).map(option => {
                     return <label className='query-option' key={v4()}>
                         <input onChange={this.change} value={option} type="radio" name="soru" /> {option}
                     </label>
