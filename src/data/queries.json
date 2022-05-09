@@ -89,9 +89,7 @@
             "android",
             "Samsung IOS"
         ]
-    }
-]
- },
+    },
     {
         "id": 8,
         "title": "Hangisi açık kodlu bir işletim sistemidir?",
@@ -104,9 +102,7 @@
             "macOS",
             "android"
         ]
-    }
-]
- },
+    },
     {
         "id": 9,
         "title": "Hangisi birbulut depolama değildirone drive?",
@@ -119,9 +115,7 @@
             "world iCloud",
             "apple iCloud"
         ]
-    }
-]
-  },
+    },
     {
         "id": 10,
         "title": "Hangisi birbulut depolama değildirone drive?",
@@ -134,9 +128,7 @@
             "mega Cloud",
             "apple iCloud"
         ]
-    }
-]
-},
+    },
     {
         "id": 11,
         "title": "Hangisi hareketli resim uzantısıdır?",
