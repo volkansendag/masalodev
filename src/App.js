@@ -1,6 +1,5 @@
 import React from 'react';
 import "./App.css";
-import './_utils/prototypes'
 import data from "./data/queries.json"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Query from './components/query/query';

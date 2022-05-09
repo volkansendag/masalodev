@@ -8,6 +8,6 @@ const suffle = (array) => {
             array[j] = temp;
         }
     }
-    return array;
+    return array || [];
 }
 export default suffle;
