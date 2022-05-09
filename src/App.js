@@ -1,19 +1,13 @@
 import React from 'react';
 import "./App.css";
 import data from "./data/queries.json"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, NavLink, Link } from "react-router-dom";
 import Query from './components/query/query';
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
-
-    this.state = {
-      index: 0,
-      queries: data,
-      query: data[0]
-    }
   }
 
 
@@ -21,20 +15,18 @@ class App extends React.Component {
 
     return <Router>
       <div className="content">
-        {/* <header>
+        <header>
           <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/soru">Soru</Link>
-              </li>
-            </ul>
+            <a href="/">Tümü</a> {' '}
+            <a href="/class/5">5. Sınıf</a> {' '}
+            <a href="/class/6">6. Sınıf</a> {' '}
+
           </nav>
-        </header> */}
+        </header>
         <Routes>
-          <Route path="/" element={<Query data={this.state} />} />
+          <Route path="/" element={<Query queries={data} />} />
+          <Route path="/class/5" element={<Query queries={data.filter((p) => p.class == 5)} />} />
+          <Route path="/class/6" element={<Query queries={data.filter((p) => p.class == 6)} />} />
         </Routes>
       </div>
     </Router>

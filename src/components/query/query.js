@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 } from 'uuid';
 import suffle from '../../_utils/functions';
 import './query.css';
+import data from "../../data/queries.json"
 
 
 class Query extends React.Component {
@@ -10,31 +11,35 @@ class Query extends React.Component {
         super(props);
 
         this.state = {
+            index: 0,
             point: 0,
             value: 0,
             message: "",
-            data: props.data
+            query: props.queries[0]
         }
+    }
+
+    shouldComponentUpdate() {
+        return true;
     }
 
     nextQuery = () => {
-        var data = this.state.data;
 
-        if (data.queries.length > data.index + 1) {
-            data.index++;
-            data.query = data.queries[data.index];
+        if (this.props.queries?.length > this.state.index + 1) {
+            this.state.index++;
+            this.state.query = this.props.queries[this.state.index];
         }
         else {
-            data.query = null;
+            this.state.query = null;
         }
 
-        this.setState({ ...this.state, data });
+        this.setState({ ...this.state });
 
-        return data.query;
+        return this.state.query;
     }
 
     change = (evt) => {
-        var data = this.state.data;
+        var data = this.state;
         var message = this.state.message;
         var point = this.state.point;
 
@@ -49,7 +54,9 @@ class Query extends React.Component {
 
         this.setState({
             ...this.state,
-            message, point, data: { ...data, query: null }
+            message,
+            point,
+            query: null,
         });
 
         setTimeout(() => {
@@ -64,9 +71,9 @@ class Query extends React.Component {
     render() {
         return <div className='query-wrapper'>
             <p>{this.state.message}</p>
-            {this.state.data.query ? <p className='query'>{this.state.data.query.title}</p> : <></>}
+            {this.state.query ? <p className='query'>{this.state.query.title}</p> : <></>}
             <p className='query-options'>
-                {suffle(this.state.data.query?.options).map(option => {
+                {suffle(this.state.query?.options).map(option => {
                     return <label className='query-option' key={v4()}>
                         <input onChange={this.change} value={option} type="radio" name="soru" /> {option}
                     </label>
