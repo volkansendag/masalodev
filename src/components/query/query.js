@@ -13,8 +13,7 @@ class Query extends React.Component {
             index: 0,
             point: 0,
             value: 0,
-            message: "",
-            query: props.queries[0]
+            message: ""
         }
     }
 
@@ -25,12 +24,8 @@ class Query extends React.Component {
     nextQuery = () => {
         var state = this.state;
 
-        if (this.props.queries?.length > this.state.index + 1) {
-            state++;
-            state.query = this.props.queries[this.state.index];
-        }
-        else {
-            state.query = null;
+        if (this.props.queries?.length > this.state.index) {
+            state.index++;
         }
 
         this.setState({ ...state });
@@ -53,9 +48,9 @@ class Query extends React.Component {
         this.setState({
             ...this.state,
             message,
-            point,
-            query: null,
+            point
         });
+
 
         setTimeout(() => {
             this.nextQuery();
@@ -67,11 +62,16 @@ class Query extends React.Component {
     }
 
     render() {
+
+        var query = this.state.message ? null : this.props.queries[this.state.index];
+
+        console.log(query);
+
         return <div className='query-wrapper'>
             <p>{this.state.message}</p>
-            {this.state.query ? <p className='query'>{this.state.query.title}</p> : <></>}
+            {query ? <p className='query'>{query.title}</p> : <></>}
             <p className='query-options'>
-                {suffle(this.state.query?.options).map(option => {
+                {suffle(query?.options).map(option => {
                     return <label className='query-option' key={v4()}>
                         <input onChange={this.change} value={option} type="radio" name="soru" /> {option}
                     </label>
