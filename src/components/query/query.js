@@ -2,7 +2,6 @@ import React from 'react';
 import { v4 } from 'uuid';
 import suffle from '../../_utils/functions';
 import './query.css';
-import data from "../../data/queries.json"
 
 
 class Query extends React.Component {
