@@ -91,3 +91,63 @@
         ]
     }
 ]
+ },
+    {
+        "id": 8,
+        "title": "Hangisi açık kodlu bir işletim sistemidir?",
+        "class": 6,
+        "point": 2,
+        "answer": "linux",
+        "options": [
+            "windws",
+            "linux",
+            "macOS",
+            "android"
+        ]
+    }
+]
+ },
+    {
+        "id": 9,
+        "title": "Hangisi birbulut depolama değildirone drive?",
+        "class": 6,
+        "point": 2,
+        "answer": "world iCloud",
+        "options": [
+            "one drive ",
+            "google drive",
+            "world iCloud",
+            "apple iCloud"
+        ]
+    }
+]
+  },
+    {
+        "id": 10,
+        "title": "Hangisi birbulut depolama değildirone drive?",
+        "class": 6,
+        "point": 2,
+        "answer": "mega Cloud",
+        "options": [
+            "yandex Disk",
+            "google drive",
+            "mega Cloud",
+            "apple iCloud"
+        ]
+    }
+]
+},
+    {
+        "id": 11,
+        "title": "Hangisi hareketli resim uzantısıdır?",
+        "class": 6,
+        "point": 2,
+        "answer": "gif",
+        "options": [
+            "pdf",
+            "psd",
+            "png",
+            "gif"
+        ]
+    }
+]
