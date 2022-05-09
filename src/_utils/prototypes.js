@@ -1,7 +1,6 @@
 /*jshint freeze: true */
 Object.defineProperty(Array.prototype, "suffle", {
     value: function () {
-        "use strict";
         var array = this;
 
         if (array && array.length > 0) {
