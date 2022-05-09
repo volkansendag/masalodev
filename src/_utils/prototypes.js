@@ -1,5 +1,4 @@
-/*jshint freeze: true */
-Object.defineProperty(Array.prototype, "suffle", {
+Object.defineProperty(Array.prototype, "suffle", { // eslint-disable-next-line no-extend-native
     value: function () {
         var array = this;
 
