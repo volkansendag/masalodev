@@ -141,5 +141,30 @@
             "png",
             "gif"
         ]
-    }
+    },
+    {
+        "id": 12,
+        "title": "Aşağıdakilerden hangisi üniversiteler için kullanılan site türü uzantısıdır?",
+        "class": 6,
+        "point": 2,
+        "answer": "edu",
+        "options": [
+            "gov",
+            "net",
+            "k12",
+            "edu"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "İnternet türkiyde ilk olarak ne zaman kullanılmaya başlanmıştır?",
+        "class": 6,
+        "point": 2,
+        "answer": "1993",
+        "options": [
+            "1993",
+            "1992",
+            "1991",
+            "1990"
+        ]
 ]
