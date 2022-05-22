@@ -169,16 +169,41 @@
         ]
     },
     {
-        "id": 14,
-        "title": "Beşinci sınıf kaçıncı sınıftır?",
+        "id": 1,
+        "title": "Aşağıdakilerden hangisi bilişim suçudur?",
         "class": 5,
         "point": 2,
-        "answer": "1993",
+        "answer": "Başkaların internet şifrelerini ele geçirmek",
         "options": [
-            "1993",
-            "1992",
-            "1991",
-            "1990"
+            "Mağazadan bilgisayar satın almak",
+            "Web sitelerine girmek",
+            "Başkaların internet şifrelerini ele geçirmek",
+            "Özel bilgilerimizi internete kulanmak "
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Aşağıdakilerden hangisi microsoft office powerpoint programı tarafından açılan dosya uzantısıdır ?",
+        "class": 5,
+        "point": 2,
+        "answer": "ppt",
+        "options": [
+            "doc",
+            "gif",
+            "ppt",
+            "mp 3"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Aşağıdakilerden hangisi bilişim suçudur?",
+        "class": 5,
+        "point": 2,
+        "answer": "Başkaların internet şifrelerini ele geçirmek",
+        "options": [
+            "Mağazadan bilgisayar satın almak",
+            "Web sitelerine girmek",
+            "Başkaların internet şifrelerini ele geçirmek",
+            "Özel bilgilerimizi internete kulanmak "
         ]
     }
-]
