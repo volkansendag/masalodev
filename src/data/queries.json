@@ -159,7 +159,7 @@
         "id": 13,
         "title": "İnternet türkiyde ilk olarak ne zaman kullanılmaya başlanmıştır?",
         "class": 6,
-        "point": 2,
+        "point": 3,
         "answer": "1993",
         "options": [
             "1993",
@@ -196,15 +196,54 @@
     },
     {
         "id": 3,
-        "title": "Aşağıdakilerden hangisi bilişim suçudur?",
+        "title": "Aşağıdakilerden hangisi kullanılan işletim sistemlerinden biri değildir?",
         "class": 5,
         "point": 2,
-        "answer": "Başkaların internet şifrelerini ele geçirmek",
+        "answer": "firefox  ",
         "options": [
-            "Mağazadan bilgisayar satın almak",
-            "Web sitelerine girmek",
-            "Başkaların internet şifrelerini ele geçirmek",
-            "Özel bilgilerimizi internete kulanmak "
+            "Windows 8",
+            "Pardus",
+            "Android",
+            "firefox"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Belirli bir süre boyunca kullanılan verilen süre bittiğinde kullanılmayan yazılım çeşidi aşağıdakilerden hangisidir?",
+        "class": 5,
+        "point": 2,
+        "answer": "Demo yazılımı",
+        "options": [
+            "Demo yazılımı",
+            "işletim sistemi",
+            "Yazılım sistemi",
+            "Beta yazılım"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Bilgisayarımızda paint programını açmasına doğru yolu aşağıdakilerden hangisidir?",
+        "class": 5,
+        "point": 2,
+        "answer": "başlat+tüm programlar+donatılar+paint",
+        "options": [
+            "Başlat+Microsoft office+paint",
+            "Başlat+microsoft office+microsoft word",
+            "başlat+tüm programlar+donatılar+paint",
+            "Başlat+microsoft powerpoint"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Bilgisayarımızda Paint programında aşağıdakilerden hangisi yapılamaz?",
+        "class": 5,
+        "point": 2,
+        "answer": "hesap yapmak",
+        "options": [
+            "resim çizmek",
+            "belli bir alanı seçip taşımak",
+            "resim üzerine yazı yazmak",
+            "hesap yapmak"
         ]
     }
 ]
