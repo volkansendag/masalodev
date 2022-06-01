@@ -245,5 +245,19 @@
             "resim üzerine yazı yazmak",
             "hesap yapmak"
         ]
+    },
+    {
+        "id": 7,
+        "title": "Bilgisayarımızda Paint programında aşağıdakilerden hangisi yapılamaz?",
+        "class": 5,
+        "point": 2,
+        "answer": "ülke kodu",
+        "options": [
+            "ülke kodu",
+            "İl kodu",
+            "plaka kodu",
+            "telefon kodu"
+        ]
     }
+]
 ]
