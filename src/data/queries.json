@@ -258,6 +258,44 @@
             "plaka kodu",
             "telefon kodu"
         ]
+    },
+    {
+        "id": 8,
+        "title": "Bilgisayarımıza girip dosya ve programlarımıza zarar verirBilgisayarınızdaki bilgileri bozabilir hatta silebilir Pek çok zararlı yazılımdan çok çok daha tehlikelidir çünkü doğudan dosyalarınıza zarar verirler yukarıda tanımı verilen zararlı yazılım aşağıdakilerden hangisidir?",
+        "class": 5,
+        "point": 2,
+        "answer": "virüs",
+        "options": [
+            "virüs",
+            "truva atı",
+            "solucan",
+            "reklam yazılımı"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Herhangi bir program çalışırken reklam açan yazılımlara ne denir?",
+        "class": 5,
+        "point": 2,
+        "answer": "reklam yazılımı",
+        "options": [
+            "casus yazılımı",
+            "truva atı",
+            "solucan",
+            "reklam yazılımı"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Aşağıdaki internet adreslerinden hangisi doğru yazılmıştır?",
+        "class": 5,
+        "point": 2,
+        "answer": "www.istanbul.gov.tr",
+        "options": [
+            "www.istanbul.gov.tr",
+            "www.çaycuma.gov .tr",
+            "www.şırnak.gov.tr",
+            "www.türkiye.gov.tr"
+        ]
     }
-]
 ]
